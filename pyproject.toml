@@ -1,0 +1,26 @@
+[build-system]
+requires = ["scikit-build-core>=0.5", "pybind11>=2.11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "pyflex"
+version = "0.0.1"
+description = "B-Flex Python bindings"
+readme = "readme.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["fsm", "search", "pybind11", "eda", "flip-flop"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: C++",
+  "Topic :: Scientific/Engineering",
+]
+
+[tool.scikit-build]
+cmake.version = ">=3.16"
+cmake.build-type = "Release"
+cmake.args = ["-DBFLEX_BUILD_PYTHON=ON"]

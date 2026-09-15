@@ -1,0 +1,20 @@
+# Build artifacts
+/build/
+/build-*/
+/cmake-build-*/
+/_install/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Generated outputs
+/solutions_out*/
+
+# Editor
+.DS_Store
